@@ -114,7 +114,7 @@ const Countries = () => {
 
                             </div>
                         </div>
-                        <div className="w-full md:w-1/4 mt-5 md:mt-0 flex justify-end">
+                        <div className="w-full md:w-1/4 mt-5 md:mt-0 flex justify-start md:justify-end">
                             <div
                                 className="bg-white mb-3 lg:mb-0  dark:bg-metus-100 h-12 w-48 text-gray-900 dark:text-white rounded-md shadow-lg relative">
 
