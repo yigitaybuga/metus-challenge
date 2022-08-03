@@ -21,9 +21,7 @@ const CountryDetail = ({country}) => {
             const res = await fetch(endpoint);
             const data = await res.json();
             setItem(data[0]);
-            console.log(data[0]);
             setIsLoaded(true);
-            // console.log(data);
         } catch (error) {
             setIsLoaded(false);
             setError(error);
@@ -60,7 +58,7 @@ const CountryDetail = ({country}) => {
                                 className="hover:bg-gray-50 dark:hover:brightness-125 transition-all shadow-md bg-white dark:bg-metus-100 flex items-center px-1 py-2 rounded-md">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                      strokeLinejoin="round" className="feather feather-arrow-left">
                                     <line x1="19" y1="12" x2="5" y2="12"></line>
                                     <polyline points="12 19 5 12 12 5"></polyline>

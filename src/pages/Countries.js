@@ -65,8 +65,6 @@ const Countries = () => {
             setItems(data);
             setFiltredItems(data);
             setIsLoaded(true);
-
-            // console.log(data);
         } catch (error) {
             setIsLoaded(false);
             setError(error);
@@ -130,7 +128,7 @@ const Countries = () => {
                                     {region != '' ? region : 'Filter by region'}
                                     <svg aria-hidden="true" className="scale-75" xmlns="http://www.w3.org/2000/svg"
                                          width="18" height="12">
-                                        <path fill="none" stroke="#ccc" stroke-width="2" d="M1 1l8 8 8-8"/>
+                                        <path fill="none" stroke="#ccc" strokeWidth="2" d="M1 1l8 8 8-8"/>
                                     </svg>
                                 </button>
 

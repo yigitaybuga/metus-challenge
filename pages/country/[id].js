@@ -3,8 +3,9 @@ import {useRouter} from 'next/router'
 import CountryDetail from "../../src/pages/CountryDetail";
 import Head from 'next/head'
 
-export default function country() {
-    const router = useRouter()
+
+const Country = () => {
+    const router = useRouter();
     const {id} = router.query
 
     let title = '';
@@ -26,5 +27,7 @@ export default function country() {
             </section>
         </Layout>
     </>
-
 }
+
+export default Country;
+
